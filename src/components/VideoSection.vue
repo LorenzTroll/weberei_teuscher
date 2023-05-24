@@ -63,7 +63,7 @@ const showPauseButton = () => {
       @mousemove="showPauseButton"
       @click="togglePlayPause">
       <source
-        src="../assets/Fadenbetireb_Web_1080p_Sound_Graded.mp4"
+        src="../assets/Fadenbetireb_Web_720p_Sound_Graded_compressed.mp4"
         type="video/mp4"
       />
     </video>
@@ -73,7 +73,7 @@ const showPauseButton = () => {
       ref="video" 
       @mousemove="showPauseButton" 
       @click="togglePlayPause">
-      <source src="../assets/Fadenbetireb_Web_1080p_Sound_Graded.mp4" type="video/mp4" />
+      <source src="../assets/Fadenbetireb_Web_720p_Sound_Graded_compressed.mp4" type="video/mp4" />
     </video>
 
     <button

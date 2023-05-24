@@ -22,9 +22,9 @@ onUnmounted(() => {
         <img src="logo.png" alt="Logo" class="logo">
       </div>
       <div class="links-container">
-        <a href="#" class="link">Link 1</a>
-        <a href="#" class="link">Link 2</a>
-        <a href="#" class="link">Link 3</a>
+        <a href="#" class="link">Impressum</a>
+        <a href="#" class="link">Datenschutz</a>
+        <a href="#" class="link">© 2023</a>
       </div>
     </div>
   </footer>
