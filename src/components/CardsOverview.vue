@@ -1,0 +1,128 @@
+<script setup></script>
+
+<template>
+  <div class="wrapper">
+    <div class="column">
+      <div class="card" style="background-color: #FCFCFC;">
+        <div class="image">
+          <img src="src/assets/images/wt_image_mechanischer-webstuhl_desktop.png" alt="">
+        </div>
+        <h1>Mechanische<br>Webstühle</h1>
+        <p> Zur Verfügung stehen zwei Schaftmaschinen Grosse Bj1949 der Firma Grünne mit max. 25 Schäften, Doppelkettsystem, 152cm Webbreite inklusive Webkante. Darüber hinaus ein 160er Spulengatter bereit plus Konusschärmaschine mit max. 2 m Kettbreite, Kreuzspulmaschineund eine Hacoba Schussspulmaschine."</p>
+      </div>
+      <div class="card card-info" style="height: 320px; background-color: #FF6A6A;">
+        <h1>Offenes Atelier</h1>
+        <p>Save the Date am 23. März 2023. Auch die Weberei Teuscher nimmt teil und läd ein. Alle Infos gibt’s im Link.</p>
+        <button class="button-filled-white">Infos</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card card-info card-request" style="height: 490px; background-color: #232323;">
+        <h1>Beratung und<br>Maschinen Mieten</h1>
+        <p>Räumlichkeiten inklusive Maschinen können gemietet werden. Das Spektrum reicht von individuellen Projekten bis zu Kursangeboten. Einweisung ist verpflichtend und weitere Expertise zusätzlich buchbar.</p>
+        <button class="button-filled-white">Anfrage</button>
+      </div>
+      <div class="card" style="height: 700px; background-color: #86B49E;">
+        <div class=" image contain">
+          <img src="src/assets/images/wt_image_hand-webstuhl_desktop.jpg" alt="">
+        </div>
+        <h1>Handwebstühle</h1>
+        <p>Zur Verfügung stehen ein Kontermarschwebstuhl mit Schnelllade und 130 cm Webbdreite, Jaquard Handwebstuhl „Chemnitzer Grobstich“ mit 416 Platinen, Webbreite von 40 cm u. 20 Fäden pro cm. Hinzu gesellt sich ein kleiner Schaftwebtuhl mit max. 16 Schäften, Schnelllade und 1 m Webbreite. Tastenwebstuhl mit 12 Schäften. 
+</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<style scoped>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(clamp(48%, 400px, 49%), 1fr));
+  grid-gap: 9%;
+
+}
+
+.column {
+}
+
+.card {
+  width: 81%;
+  padding: 15%;
+  border-radius: 20px;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+
+/*.image-contain img {
+  padding: 15%;
+  transform: translate(-20%, -25%);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 140%;  
+}*/
+
+
+img {
+  width: 110%;
+  margin-bottom: 2em;
+
+}
+
+h1 {
+  font-size: clamp(35px, 4.5vw, 40px);
+  font-weight: 900;
+  text-align: left;
+  line-height: clamp(40px, 4.5vw, 50px);
+  padding-bottom: 5%;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+.button-filled-white {
+  width: 130px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #272727;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 50px;
+  border-style: none;
+  margin: 60px 0px;
+}
+.card-info h1 {
+  color: #ffffff;
+}
+
+.card-info p {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contain {
+    width: 128%;
+    display: flex;
+    justify-content: end;
+    transform: translate(-6%, -2%);
+    margin-top: -17%;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 0%;
+  }
+}
+
+</style>

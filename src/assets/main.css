@@ -1,0 +1,54 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Steradian';
+  src: url('~@/Fonts/Steradian-Regular.woff2') format('woff2'),
+       url('~@/Fonts/Steradian-Regular.woff') format('woff'),
+       url('~@/Fonts/Steradian-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+font-family: 'Steradian Black';
+src: url('~@/src/Fonts/Steradian-Blk.ttf') format('truetype');
+font-weight: 900;
+font-style: 900;
+font-display: swap;
+}
+
+
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
