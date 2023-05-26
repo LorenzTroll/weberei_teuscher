@@ -15,7 +15,7 @@ const meinIcon = MeinIcon;
     <div class="column">
       <div class="card" style="background-color: #FCFCFC;">
         <div class="image">
-          <img src="@/assets/images/wt_image_mechanischer-webstuhl_desktop.png" alt="">
+          <img src="../assets/images/wt_image_mechanischer-webstuhl_desktop.png" alt="">
         </div>
         <h1>Mechanische<br>Webstühle</h1>
         <p> Zur Verfügung stehen zwei Schaftmaschinen Grosse Bj1949 der Firma Grünne mit max. 25 Schäften, Doppelkettsystem, 152cm Webbreite inklusive Webkante. Darüber hinaus ein 160er Spulengatter bereit plus Konusschärmaschine mit max. 2 m Kettbreite, Kreuzspulmaschineund eine Hacoba Schussspulmaschine."</p>
@@ -34,7 +34,7 @@ const meinIcon = MeinIcon;
       </div>
       <div class="card" style="height: 700px; background-color: #86B49E;">
         <div class=" image contain">
-          <img src="@/assets/images/wt_image_hand-webstuhl_desktop.jpg" alt="">
+          <img src="../assets/images/wt_image_hand-webstuhl_desktop.jpg" alt="">
         </div>
         <h1>Handwebstühle</h1>
         <p>Zur Verfügung stehen ein Kontermarschwebstuhl mit Schnelllade und 130 cm Webbdreite, Jaquard Handwebstuhl „Chemnitzer Grobstich“ mit 416 Platinen, Webbreite von 40 cm u. 20 Fäden pro cm. Hinzu gesellt sich ein kleiner Schaftwebtuhl mit max. 16 Schäften, Schnelllade und 1 m Webbreite. Tastenwebstuhl mit 12 Schäften.</p>
