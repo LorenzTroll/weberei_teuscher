@@ -41,6 +41,8 @@
   font-size: 17px;
   font-weight: 450;
   max-width: 45%;
+  hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 .button-outline-transparent {

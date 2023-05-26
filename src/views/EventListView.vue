@@ -79,6 +79,10 @@ onMounted(() => {
   margin-top: 3%;
 }
 
+.cards-overview {
+  margin-bottom: 5%;
+}
+
 .footer {
 
 }

@@ -35,7 +35,7 @@ footer {
   width: 100%;
   height: 8em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #272727;
   border-radius: 10px 10px 0 0;
@@ -45,7 +45,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 .logo-container {
@@ -60,7 +60,13 @@ footer {
 .links-container {
   display: flex;
   justify-content: space-evenly;
-  width: 13.625em;
+  width: 24.625em;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 900;
 }
 
 .link {

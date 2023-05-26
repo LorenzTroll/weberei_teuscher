@@ -8,9 +8,10 @@ import 'vue3-lottie/dist/style.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faPlay)
+library.add(faPlay, faArrowUp)
 
 const app = createApp(App).use(Vue3Lottie)
 

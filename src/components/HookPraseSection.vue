@@ -3,7 +3,7 @@
 
 <template>
   <div class="hook-phrase">
-    <p>TEXTILE<span class="colored-word">PRODUKTION</span>
+    <p>TEXTILE <span class="colored-word">PRODUKTION</span>
       <span class="colored-word">GESTALTUNG</span> IST EIN GEMEINSAMER
       <span class="colored-word">PROZESS</span>. DIE WEBEREI TEUSCHER PRODUZIERT
       DEN <span class="colored-word">STOFF AUS IHREN IDEEN.</span>
