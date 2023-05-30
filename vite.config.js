@@ -11,5 +11,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  build: {
+    rollupOptions: {
+      input: 'src/main.js',
+      external: ['src/assets/images/wt_image_mechanischer-webstuhl_desktop.png']
+    },
+  },
 })
