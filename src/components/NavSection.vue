@@ -108,7 +108,7 @@ onUnmounted(() => {
 .button-outline-transparent {
   width: 130px;
   height: 50px;
-  border: 3px solid #000;
+  border: 2.7px solid #000;
   background-color: transparent;
   font-weight: bold;
   font-size: 17px;

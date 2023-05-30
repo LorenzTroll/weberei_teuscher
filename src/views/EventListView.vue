@@ -71,6 +71,10 @@ onMounted(() => {
   margin: 0px 8px;
 }
 
+.fabric-text {
+  margin-bottom: 15%;
+}
+
 .cards-overview {
   margin: 5% 20% 0% 12%;
 }
@@ -92,7 +96,7 @@ onMounted(() => {
     display: flex;
     flex-direction: row;
     align-items: center;
-    transform: translate(-25%, 0%);
+    transform: translate(-25%, -15%);
     width: 130%;
   }
   .cards-overview {
