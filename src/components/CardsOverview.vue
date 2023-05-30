@@ -6,8 +6,8 @@ const scrollToTop = () => {
   })
 };
 
-import Photo1 from '@/assets/images/wt_image_mechanischer-webstuhl_desktop.png'
-const photo1 = Photo1;
+import CardImage from '../assets/images/wt_image_mechanischer-webstuhl_desktop.png';
+const cardImage = CardImage;
 
 import MeinIcon from '@/assets/icons/wt_arrow-up-long.svg';
 const meinIcon = MeinIcon;
@@ -18,7 +18,7 @@ const meinIcon = MeinIcon;
     <div class="column">
       <div class="card" style="background-color: #FCFCFC;">
         <div class="image">
-          <img :src="Photo1" alt="">
+          <img :src="cardImage" alt="">
         </div>
         <h1>Mechanische<br>Webstühle</h1>
         <p> Zur Verfügung stehen zwei Schaftmaschinen Grosse Bj1949 der Firma Grünne mit max. 25 Schäften, Doppelkettsystem, 152cm Webbreite inklusive Webkante. Darüber hinaus ein 160er Spulengatter bereit plus Konusschärmaschine mit max. 2 m Kettbreite, Kreuzspulmaschineund eine Hacoba Schussspulmaschine."</p>
