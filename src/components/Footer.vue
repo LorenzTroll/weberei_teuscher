@@ -19,7 +19,7 @@ onUnmounted(() => {
   <footer>
     <div class="footer-container">
       <div class="logo-container" v-if="!isMobile">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img class="logo" src="../assets/ident/wt_ident_2023.svg" alt="Logo">
       </div>
       <div class="links-container">
         <a href="#" class="link">Impressum</a>
