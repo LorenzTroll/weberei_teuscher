@@ -6,6 +6,7 @@ import imagemin from 'vite-plugin-imagemin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [vue(), imagemin()],
   resolve: {
     alias: {
@@ -13,9 +14,12 @@ export default defineConfig({
     }
   },
   build: {
+    assetsDir: '',
+    outDir: 'dist',
+    assetsInlineLimit: 0,
+    emptyOutDir: true,
     rollupOptions: {
-      input: 'src/main.js',
-      external: ['src/assets/images/wt_image_mechanischer-webstuhl_desktop.png']
+      input: 'index.html',
     },
   },
 })
