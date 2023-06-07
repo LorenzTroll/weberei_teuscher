@@ -45,8 +45,8 @@ onUnmounted(() => {
     <div class="overlay" :class="{ 'visible': menuOpen }">
         <div id="overlay-wrapper">
             <div class="overlay-link">Home</div>
-            <div class="overlay-link">Portfolio</div>
-            <div class="overlay-link">About</div>
+            <div class="overlay-link"><RouterLink :to="{ name: 'portfolio' }">Portfolio</RouterLink></div>
+            <div class="overlay-link"><RouterLink :to="{ name: 'about' }">About</RouterLink></div>
         </div>
         <div id="nav-footer-wrapper">
             <div id="nav-footer-left">
@@ -66,7 +66,7 @@ onUnmounted(() => {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: 120px;
   width: 100%;
   color: #ffffff;
   z-index: 100;
@@ -210,6 +210,11 @@ onUnmounted(() => {
   text-decoration: none;
   cursor: pointer;
   align-content: flex-start;
+}
+
+.overlay-link a {
+  text-decoration: none;
+  color: white;
 }
 
 #overlay-wrapper {

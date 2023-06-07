@@ -83,7 +83,7 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin: 1% 15% 2% 15%;
+  margin: 1% 17% 2% 17%;
 }
 
 .hero-text h1 {
@@ -96,7 +96,7 @@ onBeforeUnmount(() => {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  gap: clamp(0.5em, 5vw, 3em);
+  gap: clamp(2em, 2vw, 3em);
 }
 
 .text-columns p {

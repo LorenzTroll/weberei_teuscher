@@ -62,6 +62,7 @@ onMounted(() => {
   transform: translate(-2%, -3%);
   width: 130%;
 }
+
 .videos {
   display: flex;
   flex-direction: column;
@@ -72,7 +73,8 @@ onMounted(() => {
 }
 
 .fabric-text {
-  margin-bottom: 15%;
+  margin-bottom: 7%;
+  transform: translate(0%, -10%);
 }
 
 .cards-overview {
@@ -93,6 +95,7 @@ onMounted(() => {
 
 @media (max-width: 480px) {
   .fabrics {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;

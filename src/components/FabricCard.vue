@@ -1,8 +1,11 @@
 <script setup>
+import MeinIcon from '@/assets/icons/wt_arrow-right-long.svg';
+const meinIcon = MeinIcon;
+
 defineProps({
   fabric: {
     type: Object,
-    required: true
+    required: true,
   },
 });
 </script>
@@ -10,13 +13,13 @@ defineProps({
 <template>
   <RouterLink class="fabrics-link" :to="{ name: 'fabric-details', params: { id: fabric.id} }">
     <div class="fabric-card">
-        <div class="image-container">
-          <img :src="fabric.image" alt="My Image" />
-        </div>
+      <div class="image-container">
+        <img :src="fabric.image" alt="My Image" />
+      </div>
     </div>
   </RouterLink>
+  <div><button class="portfolio-button"><img id="arrow-right-long" :src="meinIcon" alt="Zum Portfolio" /></button></div>
 </template>
-
 
 <style scoped>
 .fabric-card {
@@ -44,12 +47,13 @@ defineProps({
 }
 
 .image-container:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .image-container:hover img{
-  transform: scale(1.015);
+  transform: scale(1.15) rotate(3deg) translateX(-10px); 
+ 
 }
 
 .fabric-link {
@@ -59,6 +63,25 @@ defineProps({
 
 .fabrics-link {
   margin-right: 6%;
+}
+
+.portfolio-button {
+  position: absolute;
+  display: flex;
+  top: 25em;
+  right: 30em;
+  width: 9em;
+  height: 4em;
+  background-color: white;
+  border-radius: 53.25em;
+  border-style: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow-right-long {
+  width: 45%;
 }
 
 @media (max-width: 480px) {
