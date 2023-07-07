@@ -4,8 +4,8 @@ import { ref, onMounted } from 'vue'
 import NavSection from '@/components/NavSection.vue'
 import Footer from '@/components/Footer.vue'
 
-import MeinIcon from '@/assets/icons/wt_arrow-right-long.svg';
-const meinIcon = MeinIcon;
+import MeinIcon from '@/assets/icons/wt_arrow-right-long.svg'
+const meinIcon = MeinIcon
 </script>
 
 <template>
@@ -28,16 +28,30 @@ const meinIcon = MeinIcon;
       <div class="image" style="height: auto;"><img src="../assets/images/placeholder/wt_image_placeholder_06.jpg" alt=""></div>
     </div>
   </div>
-
   <div class="portfolio-text">
     <h1>Portfolio</h1>
     <div class="text-columns">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit rerum neque cumque maxime fuga aliquid nihil nulla harum porro aperiam dolor sint ipsa voluptatibus quam quia inventore eius atque dolorem obcaecati, veniam minus vitae? Eum quisquam dolorum in minus similique et itaque provident at facilis assumenda numquam, porro sunt alias.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis, enim aliquid, reprehenderit animi illum quo molestias ullam dolore ipsum facere ea tempora blanditiis dolorem libero necessitatibus quis ad iste. Fugit aperiam molestias non dignissimos quaerat impedit rerum, in id, nostrum cupiditate aspernatur, libero consequatur.</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit rerum
+        neque cumque maxime fuga aliquid nihil nulla harum porro aperiam dolor
+        sint ipsa voluptatibus quam quia inventore eius atque dolorem obcaecati,
+        veniam minus vitae? Eum quisquam dolorum in minus similique et itaque
+        provident at facilis assumenda numquam, porro sunt alias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+        veritatis, enim aliquid, reprehenderit animi illum quo molestias ullam
+        dolore ipsum facere ea tempora blanditiis dolorem libero necessitatibus
+        quis ad iste. Fugit aperiam molestias non dignissimos quaerat impedit
+        rerum, in id, nostrum cupiditate aspernatur, libero consequatur.
+      </p>
     </div>
-    <div><button class="portfolio-button"><img id="arrow-right-long" :src="meinIcon" alt="Zum Portfolio" /></button></div>
+    <div>
+      <button class="portfolio-button">
+        <img id="arrow-right-long" :src="meinIcon" alt="Zum Portfolio" />
+      </button>
+    </div>
   </div>
-
   <div class="footer">
     <Footer />
   </div>
@@ -48,7 +62,7 @@ const meinIcon = MeinIcon;
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin: 5% 17% 10% 17%;
+  margin: 15% 10% 10% 10%;
 }
 
 .portfolio-text h1 {
@@ -88,6 +102,8 @@ const meinIcon = MeinIcon;
   flex: 1;
   font-size: 17px;
   font-weight: 450;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .grid-container {
@@ -99,7 +115,7 @@ const meinIcon = MeinIcon;
   margin: auto;
 }
 
-  .image-large {
+.image-large {
   height: 80%;
 }
 
@@ -109,25 +125,43 @@ img {
   border-radius: 10px;
 }
 
+.portfolio-button {
+  /*top: 25em;
+  right: 30em;
+  width: 9em;*/
+  height: 4em;
+  background-color: white;
+  border-radius: 53.25em;
+  border-style: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+}
+
 @media (max-width: 768px) {
   .column {
     flex-basis: 40%;
     margin-right: 0;
   }
-.image {
-  height: 90%;
-}
-
+  .image {
+    height: 90%;
+  }
   .image-large {
-  height: 98.6%;
-}
-}
-
-.image {
-  margin-bottom: 5px;
+    height: 98.6%;
+  }
+  .image {
+    margin-bottom: 5px;
+  }
+  .text-columns {
+    flex-direction: column;
+    gap: 3%;
+  }
+  .portfolio-button {
+    margin: 20% 2% 30% 0%;
+  }
 }
 
 @media (max-width: 480px) {
 }
-
 </style>

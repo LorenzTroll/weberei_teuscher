@@ -1,5 +1,6 @@
 <script setup>
-import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
+import { ref, onMounted, onUnmounted, watchEffect} from 'vue';
+import { RouterLink, RouterView } from 'vue-router';
 
 const menuOpen = ref(false);
 const isSmallScreen = ref(window.innerWidth <= 768);
@@ -44,9 +45,9 @@ onUnmounted(() => {
   </div>
     <div class="overlay" :class="{ 'visible': menuOpen }">
         <div id="overlay-wrapper">
-            <div class="overlay-link">Home</div>
+            <div class="overlay-link"><RouterLink :to="{ name: 'event-list' }">Home</RouterLink></div>
             <div class="overlay-link"><RouterLink :to="{ name: 'portfolio' }">Portfolio</RouterLink></div>
-            <div class="overlay-link"><RouterLink :to="{ name: 'about' }">About</RouterLink></div>
+            <!--<div class="overlay-link"><RouterLink :to="{ name: 'about' }">About</RouterLink></div>-->
         </div>
         <div id="nav-footer-wrapper">
             <div id="nav-footer-left">
@@ -80,7 +81,7 @@ onUnmounted(() => {
   max-width: 1920px;
   padding: 0 80px;
   background-color: #EAE8E8;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .logo {
@@ -89,11 +90,11 @@ onUnmounted(() => {
 }
 
 #text-nav-short-hook {
-  font-size: 17px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height: 22px;
+  line-height: 19px;
   color: #272727;
 }
 
@@ -106,12 +107,12 @@ onUnmounted(() => {
 }
 
 .button-outline-transparent {
-  width: 130px;
+  width: 120px;
   height: 50px;
   border: 2.7px solid #000;
   background-color: transparent;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,12 +121,12 @@ onUnmounted(() => {
 }
 
 .button-filled-black {
-  width: 130px;
+  width: 120px;
   height: 50px;
   background-color: #272727;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,6 +242,13 @@ onUnmounted(() => {
 #nav-footer-right {
     
 }
+
+@media (max-width: 1200px) {
+  #text-nav-short-hook {
+    visibility: hidden;
+    width: 10%;
+  }
+}
 /* Tablet */
 @media (max-width: 768px) {
 .button-outline-transparent {
@@ -254,9 +262,7 @@ onUnmounted(() => {
     font-size: 18px;
   }
 
-  #text-nav-short-hook {
-    display: none;
-  }
+
 }
 
 /* Smartphone */

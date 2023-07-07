@@ -2,21 +2,23 @@
 </script>
 
 <template>
+  <div class="wrapper">
   <div class="fabric-text">
     <h1>Gewebe</h1>
-
     <div class="text-columns">
       <p>Gewebeart und Gewebeeigenschaften auszuloten ist Kern des Herstellungsprozesses. Welche Beschaffenheit hat der Stoff? Was für Anforderungen soll er erfüllen? Was für Voraussetzungen bieten die Maschinen? Einige abgewebte Stoffe finden Sie in unserem Portfolio.</p>
       <p>Gewebeart und Gewebeeigenschaften auszuloten ist Kern des Herstellungsprozesses. Welche Beschaffenheit hat der Stoff? Was für Anforderungen soll er erfüllen? Was für Voraussetzungen bieten die Maschinen? Einige abgewebte Stoffe finden Sie in unserem Portfolio.</p>
-      <!-- <button class="button-outline-transparent">
-          Portfolio
-          <img class="arrow-icon" src="../assets/ident/wt_arrow_2023.svg" alt="Arrow" width="50" height="20"/>
-      </button> -->
     </div>
   </div>
+</div>
 </template>
 
 <style scoped>
+
+.wrapper {
+  margin: 0% 4% 0% 4%;
+}
+
 .fabric-text {
   display: flex;
   flex-direction: column;
@@ -81,9 +83,6 @@
 @media (max-width: 480px) {
   .text-columns {
   gap: 0px;
-  }
-  .button-outline-transparent {
-
   }
 } 
 </style>

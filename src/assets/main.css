@@ -18,7 +18,8 @@
 }
 @font-face {
 font-family: 'Steradian Black';
-src: url('~@/src/Fonts/Steradian-Blk.ttf') format('truetype');
+src: url('~@/Fonts/Steradian-Blk.ttf') format('truetype'),
+     url('~@/Fonts/Steradian-Regular.woff') format('woff');
 font-weight: 900;
 font-style: 900;
 font-display: swap;

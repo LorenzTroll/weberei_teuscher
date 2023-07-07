@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Vue3Lottie from 'vue3-lottie'
 
 import EventListView from '../views/EventListView.vue'
 import EventDetailsView from '../views/EventDetailsView.vue'
@@ -12,7 +11,9 @@ import HookPhraseSection from '../components/HookPraseSection.vue'
 import FabricCard from '../components/FabricCard.vue'
 import FabricText from '../components/FabricText.vue'
 import CardsOverview from '../components/CardsOverview.vue'
+import ContactSection from '../components/ContactSection.vue'
 import Footer from '../components/Footer.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,13 +21,24 @@ const router = createRouter({
     {
       path: '/',
       name: 'event-list',
-      component: EventListView, NavSection, LottieSection, VideoSection, HookPhraseSection, FabricCard, FabricText, CardsOverview,
+      component: EventListView,
+      NavSection,
+      LottieSection,
+      VideoSection,
+      HookPhraseSection,
+      FabricCard,
+      FabricText,
+      CardsOverview,
+      ContactSection,
+      Footer,
     },
     {
       path: '/event/:id',
       name: 'fabric-details',
       props: true,
       component: EventDetailsView,
+      NavSection,
+      Footer,
     },
     {
       path: '/about',
@@ -36,11 +48,15 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       // component: () => import('../views/AboutView.vue')
       component: AboutView,
+      NavSection,
+      Footer,
     },
     {
       path: '/portfolio',
       name: 'portfolio',
       component: PortfolioView,
+      NavSection,
+      Footer,
     }
   ]
 })

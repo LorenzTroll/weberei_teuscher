@@ -38,7 +38,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #272727;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .footer-container {
@@ -46,7 +46,17 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/placeholder/wt_footer_backgorund-image.jpg');
+  overflow: hidden; /* This will crop the image */
+  position: relative;
+  border-radius: 10px;
+
+  background-size: cover; /* This will scale the image to 50% of its original size */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  background-position: center;
 }
+
 
 .logo-container {
   width: 13.625em;

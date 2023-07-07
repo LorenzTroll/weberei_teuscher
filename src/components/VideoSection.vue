@@ -100,7 +100,6 @@ const showPauseButton = () => {
 </template>
 
 <style scoped>
-
 .video-container {
   position: relative;
   width: 100%;
@@ -162,8 +161,8 @@ video {
   .play-button,
   .pause-button {
     position: absolute;
-    width: 190px;
-    height: 65px;
+    width: clamp(100px, 150px, 130px);
+    height: 55px;
     font-size: 15px;
     border-radius: 50px;
     display: block;
