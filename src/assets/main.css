@@ -8,18 +8,18 @@
 }
 
 @font-face {
-  font-family: 'Steradian';
-  src: local('Steradian'),
-       url('~@/Fonts/Steradian-Regular.woff2') format('woff2'),
-       url('~@/Fonts/Steradian-Regular.woff') format('woff'),
-       url('~@/Fonts/Steradian-Regular.ttf') format('truetype');
+  font-family: 'Steradian-Regular';
+  src: local('Steradian-Regular'),
+       url('@/Fonts/Steradian-Regular.woff2') format('woff2'),
+       url('@/Fonts/Steradian-Regular.woff') format('woff'),
+       url('@/Fonts/Steradian-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Steradian Black';
-  src: local('Steradian Black'),
+  font-family: 'Steradian-Blk';
+  src: local('Steradian-Blk'),
        url('~@/Fonts/Steradian-Blk.woff2') format('woff2'),
        url('~@/Fonts/Steradian-Blk.woff') format('woff'),
        url('~@/Fonts/Steradian-Blk.ttf') format('truetype');
@@ -27,9 +27,6 @@
   font-style: 900;
   font-display: swap;
 }
-
-
-
 
 a,
 .green {

@@ -108,7 +108,7 @@ h1 {
     line-height: clamp(45px, 2vw, 50px);
     margin: 0%;
     font-size: clamp(35px, 3vw, 40px);
-    font-family: 'Steradian Black';
+    font-family: 'Steradian Blk' !important;
     font-weight: 900;
     width: 120%;
 }
