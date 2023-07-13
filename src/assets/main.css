@@ -20,8 +20,9 @@
 @font-face {
   font-family: 'Steradian Black';
   src: local('Steradian Black'),
-       url('~@/Fonts/Steradian-Blk.ttf') format('truetype'),
-       url('~@/Fonts/Steradian-Regular.woff') format('woff');
+       url('~@/Fonts/Steradian-Blk.woff2') format('woff2'),
+       url('~@/Fonts/Steradian-Blk.woff') format('woff'),
+       url('~@/Fonts/Steradian-Blk.ttf') format('truetype');
   font-weight: 900;
   font-style: 900;
   font-display: swap;
