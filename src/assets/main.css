@@ -9,7 +9,8 @@
 
 @font-face {
   font-family: 'Steradian';
-  src: url('~@/Fonts/Steradian-Regular.woff2') format('woff2'),
+  src: local('Steradian'),
+       url('~@/Fonts/Steradian-Regular.woff2') format('woff2'),
        url('~@/Fonts/Steradian-Regular.woff') format('woff'),
        url('~@/Fonts/Steradian-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -17,12 +18,13 @@
   font-display: swap;
 }
 @font-face {
-font-family: 'Steradian Black';
-src: url('~@/Fonts/Steradian-Blk.ttf') format('truetype'),
-     url('~@/Fonts/Steradian-Regular.woff') format('woff');
-font-weight: 900;
-font-style: 900;
-font-display: swap;
+  font-family: 'Steradian Black';
+  src: local('Steradian Black'),
+       url('~@/Fonts/Steradian-Blk.ttf') format('truetype'),
+       url('~@/Fonts/Steradian-Regular.woff') format('woff');
+  font-weight: 900;
+  font-style: 900;
+  font-display: swap;
 }
 
 
