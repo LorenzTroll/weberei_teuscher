@@ -1,6 +1,16 @@
 <script setup>
 import { gsap } from 'gsap';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+import MeinIcon from '@/assets/icons/wt_arrow-up-long.svg';
+const meinIcon = MeinIcon
+
 import CardImage from '../assets/images/placeholder/wt_portrait_image_01.png'
 const cardImage = CardImage
 
@@ -65,6 +75,11 @@ const resetButtonPosition = (event) => {
         </div>
       </div>
     </div>
+    <div class="column-to-top">
+      <button class="scroll-to-top button-filled-white-vertical" @click="scrollToTop">
+        <img id="arrow-long" :src="meinIcon" alt="Zum Anfang" />
+      </button>
+    </div>
   </div>
 </template>
 
@@ -73,7 +88,7 @@ const resetButtonPosition = (event) => {
   display: grid;
   grid-template-columns: repeat(3, minmax(clamp(48%, 400px, 49%), 1fr));
   grid-gap: 9%;
-  margin: 0% 6% 0% 6%;
+  margin: 0% 3% 0% 5%;
   position: relative;
 }
 
@@ -100,20 +115,20 @@ const resetButtonPosition = (event) => {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0% 0% 10% 10%;
+  padding: 0% 0% 10% 16%;
 }
 
 h1 {
   text-align: left;
-    line-height: clamp(45px, 2vw, 50px);
-    margin: 0%;
-    font-size: clamp(35px, 3vw, 40px);
-    font-family: 'Steradian Blk' !important;
-    font-weight: 900;
-    width: 120%;
+  line-height: clamp(45px, 2vw, 50px);
+  margin: 0%;
+  font-size: clamp(35px, 3vw, 40px);
+  font-family: 'Steradian Black';
+  font-weight: 900;
+  width: 120%;
 }
 .button-filled-black {
-  width: 130px;
+  width: 150px;
   height: 50px;
   background-color: #272727;
   color: #ffffff;
@@ -129,7 +144,7 @@ h1 {
 }
 
 #image-contact {
-  width: 110%;
+  width: 120%;
   height: -webkit-fill-available;
   border-radius: 10px;
   object-fit: cover;
@@ -139,7 +154,6 @@ h1 {
   margin: -50px;
   padding: 50px;
   display: inline-block;
-  /*border: 1px solid #000; //use this for debugging*/
 }
 
 
@@ -155,6 +169,27 @@ h1 {
   background-color: #000;
   transition: 0.5s background-color, 0.5s box-shadow;
   box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
+}
+
+.scroll-to-top {
+  border-radius: 50px;
+  color: #272727;
+  cursor: pointer;
+  height: 140px;
+  width: 50px;
+}
+
+.column-to-top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2.5em;
+  margin-left: 3em;
+}
+
+#arrow-long {
+  width: 50%;
+  height: auto;
+  margin: 0;
 }
 
 @media (max-width: 1069px) {
@@ -183,18 +218,39 @@ h1 {
   .card-right {
   padding: 0% 10% 10% 0%;
   }
+  .column-to-top {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
+  .background {
+    top: -21%;
+    left: -42%;
+    position: absolute;
+    z-index: -100;
+    width: 200%;
+  }
   .card-right {
-  padding: 0% 10% 10% 0%;
+    padding: 0% 10% 10% 0%;
   }
   #image-contact {
     width: 100%;
   }
+  .magnetic {
+    margin: 8% 0% 0% 0%;
+    width: 100%;
+    padding: 0% 0% 0% 5%;
+  }
+  .button-filled-black {
+    margin: 10% auto;
+  }
+  .column-to-top {
+    display: none;
+  }
 
-h1 {
-  width: 110%;
-}
+  h1 {
+    width: 110%;
+  }
 }
 </style>

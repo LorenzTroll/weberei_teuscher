@@ -4,9 +4,9 @@
   <div class="wrapper-hook-phrase">
     <div class="hook-phrase">
       <p>
-        TEXTILE <span class="colored-word">PRODUKTION</span> UND
-        <span class="colored-word">GESTALTUNG</span> IST EIN GEMEINSAMER
-        <span class="colored-word">PROZESS</span>. DIE WEBEREI TEUSCHER PRODUZIERT DEN <span class="colored-word">STOFF AUS IHREN IDEEN.</span>
+        DER <span class="colored-word">STOFF AUS IHREN IDEEN,</span> HERGESTELLT IN DER 
+        <span class="colored-word">WEBEREI TEUSCHER.</span> <!-- IST EIN GEMEINSAMER
+        <span class="colored-word">PROZESS</span>. DIE WEBEREI TEUSCHER PRODUZIERT DEN <span class="colored-word">STOFF AUS IHREN IDEEN.</span> -->
       </p>
     </div>
   </div>
@@ -14,7 +14,7 @@
 
 <style scoped>
 .wrapper-hook-phrase {
-  margin: 0% 9% 0% 13%;
+  margin: 5% 9% 9% 13%;
 }
 .hook-phrase {
   height: auto;
@@ -24,6 +24,7 @@
   font-size: clamp(1.5em, 6.5vw, 3.3em);
   font-family: 'Steradian Black';
   font-weight: 900;
+  font-style: normal;
 
   color: #2f2f2f;
   overflow: hidden;
@@ -43,13 +44,18 @@ p {
   p {
     text-align: start;
     width: 100%;
-    line-height: 3.5rem !important;
+    line-height: 3rem !important;
     margin-bottom: 4rem;
   }
 }
 @media (max-width: 480px) {
+  .wrapper-hook-phrase {
+    margin: 10% 8% 10% 8%;
+    font-size: 19px;
+  }
   .hook-phrase p {
-    line-height: 2rem !important;
+    line-height: 2.2rem !important;
+
   }
 }
 </style>

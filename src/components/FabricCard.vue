@@ -27,14 +27,14 @@ defineProps({
   margin-bottom: 18px;
   transform: rotate(-40deg);
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Sie können die Höhe nach Bedarf anpassen */
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sie können die Höhe nach Bedarf anpassen */
+  width: 90%;
 }
 .image-container {
-  width: 250px;
-  height: 690px;
+  width: 280px;
+  height: 810px;
   overflow: hidden;
   border-radius: 15px;
   margin: 5% 5% 5% 0%;
@@ -43,19 +43,19 @@ defineProps({
 }
 
 .image-container img {
-  width: 100%;
+  width: 200%;
   height: 150%;
   object-fit: cover;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .image-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .image-container:hover img {
-  transform: scale(1.15) rotate(3deg) translateX(-10px);
+  transform: scale(1.04) rotate(1.5deg) translateX(-20px) translateY(10px);
 }
 
 .fabrics-link {
@@ -85,7 +85,7 @@ defineProps({
 
 @media (max-width: 480px) {
   .image-container {
-    width: calc(50% + 20%);
+    width: calc(48% + 20%);
     height: 450px;
     border-radius: 10px;
     max-width: 800px;

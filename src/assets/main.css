@@ -8,23 +8,30 @@
 }
 
 @font-face {
-  font-family: 'Steradian-Regular';
-  src: local('Steradian-Regular'),
-       url('@/Fonts/Steradian-Regular.woff2') format('woff2'),
-       url('@/Fonts/Steradian-Regular.woff') format('woff'),
-       url('@/Fonts/Steradian-Regular.ttf') format('truetype');
+  font-family: 'steradianregular';
+  /*src: local(steradianregular),*/
+  src: url('/Fonts/steradian-rg-webfont.eot#'),
+  src: url('/Fonts/steradian-rg-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/Fonts/steradian-rg-webfont.woff2') format('woff2'),
+       url('/Fonts/steradian-rg-webfont.woff') format('woff'),
+       url('/Fonts/steradian-rg-webfont.ttf') format('truetype'),
+       url('/Fonts/steradian-rg-webfont.svg#steradianregular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Steradian-Blk';
-  src: local('Steradian-Blk'),
-       url('~@/Fonts/Steradian-Blk.woff2') format('woff2'),
-       url('~@/Fonts/Steradian-Blk.woff') format('woff'),
-       url('~@/Fonts/Steradian-Blk.ttf') format('truetype');
-  font-weight: 900;
-  font-style: 900;
+  font-family: 'steradianblack';
+  /*src: local(steradianblack),*/
+  src: url('~@/Fonts/steradian-blk-webfont.eot#'),
+  src: url('~@/Fonts/steradian-blk-webfont.eot?#iefix') format('embedded-opentype'),
+       url('~@/Fonts/steradian-blk-webfont.woff2') format('woff2'),
+       url('~@/Fonts/steradian-blk-webfont.woff') format('woff'),
+       url('~@/Fonts/steradian-blk-webfont.ttf') format('truetype'),
+       url('~@/Fonts/steradian-blk-webfont.svg#steradianregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 

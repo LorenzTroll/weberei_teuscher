@@ -43,11 +43,11 @@ onMounted(() => {
     <HookPhraseSection />
   </div>
   <div class="fabrics">
-    <div class="button-container">
+    <!--<div class="button-container">
       <button class="portfolio-button">
         <img id="arrow-right-long" :src="meinIcon" alt="Zum Portfolio" />
       </button>
-    </div>
+    </div>-->
     <FabricCard v-for="fabric in fabrics" :key="fabric.id" :fabric="fabric" />
     <div id="rectangle-element"></div>
   </div>
@@ -136,11 +136,11 @@ onMounted(() => {
 }
 
 .fabric-text {
-  transform: translate(0%, -5%);
+  transform: translate(0%, -15%);
 }
 
 .cards-overview {
-  margin: 5% 20% 0% 12%;
+  margin: 4% 10% 0% 10%;
 }
 
 .hook-phrase {
@@ -148,7 +148,7 @@ onMounted(() => {
 }
 
 .contact-section {
-  margin: 10% 20% 13% 12%;
+  margin: 12% 20% 13% 10.5%;
 }
 @media (max-width: 768px) {
   .fabrics {
@@ -172,14 +172,17 @@ onMounted(() => {
     width: 180%;
   }
   .cards-overview {
-    margin: 5% 13% 0% 4%;
+    margin: -7% 13% 0% 4%;
   }
   .lottie-container {
-    transform: translate(-2%, -2%);
+    transform: translate(-2%, -3.5%);
     width: 105%;
   }
+  #rectangle-element {
+    display: none;
+  }
   .contact-section {
-  margin: 5% 5% 0% 4%;
+  margin: 20% 5% 0% 4%;
 }
 .button-container {
   width: 60%;

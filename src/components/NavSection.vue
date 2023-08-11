@@ -195,7 +195,7 @@ onUnmounted(() => {
   pointer-events: none;
   transition: opacity 0.5s;
   z-index: 100;
-  line-height: 65px;
+  line-height: 35px;
 }
 
 .overlay.visible {
@@ -211,6 +211,7 @@ onUnmounted(() => {
   text-decoration: none;
   cursor: pointer;
   align-content: flex-start;
+  margin-bottom: 30px;
 }
 
 .overlay-link a {
@@ -225,22 +226,24 @@ onUnmounted(() => {
 }
 
 #nav-footer-wrapper {
-    position: absolute;
-    display: flex;
-    padding: 0 80px;
-    justify-content: space-between;
-    align-items: center;
-    width: -webkit-fill-available;
-    bottom: 40px;
+  position: absolute;
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  bottom: 40px;
+  flex-wrap: wrap;
 }
 
 #nav-footer-left {
-    display: flex;
-    gap: 20%;
+  display: flex;
+  gap: 20%;
+  margin-right: 35px;
 }
 
 #nav-footer-right {
-    
+  font-weight: 900;
 }
 
 @media (max-width: 1200px) {
@@ -252,23 +255,22 @@ onUnmounted(() => {
 /* Tablet */
 @media (max-width: 768px) {
 .button-outline-transparent {
-  width: 140px;
-  height: 50px;
-  font-size: 18px;
-  }
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    }
   .button-filled {
     width: 140px;
     height: 50px;
     font-size: 18px;
   }
-
-
 }
 
 /* Smartphone */
 @media (max-width: 480px) {
   .nav-container {
     padding: 0 8%;
+    height: 105px;
   }
   .logo {
     width: 170px;

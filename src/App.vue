@@ -4,16 +4,14 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div id="layout">
-    <header>
-      
-    </header>
+    <header></header>
     <RouterView />
   </div>
 </template>
 
 <style scoped>
 #layout {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: steradianregular, steradianblack, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

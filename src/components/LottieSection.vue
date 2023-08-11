@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Vue3Lottie from 'vue3-lottie'
+import { gsap } from 'gsap';
 
 const animationLink = ref(
   'https://lottie.host/3aabb79d-d852-485a-a1a5-628af5a46e8b/5TbYyu3rxb.json'
@@ -10,7 +11,7 @@ let mql
 
 const updateAnimation = () => {
   animationLink.value = mql.matches
-    ? 'https://lottie.host/e19d67ea-3677-444d-9d85-a51ffe625698/zXGQig3McA.json'
+    ? 'https://lottie.host/c585abda-6c21-4bf0-a71a-5301d21c0469/U5KKAh54y4.json'
     : 'https://lottie.host/3aabb79d-d852-485a-a1a5-628af5a46e8b/5TbYyu3rxb.json'
   componentKey.value++
 }
@@ -24,6 +25,39 @@ onMounted(() => {
 onBeforeUnmount(() => {
   mql.removeListener(updateAnimation)
 })
+
+const mouseEnter = (event) => {
+  event.currentTarget.addEventListener('mousemove', mouseMove);
+};
+
+const mouseMove = (event) => {
+  const magnetButton = event.currentTarget;
+  const bounding = magnetButton.getBoundingClientRect();
+  const strength = 20;
+
+  gsap.to(magnetButton, {
+    duration: 1,
+    x: (((event.clientX - bounding.left) / magnetButton.offsetWidth) - 0.5) * strength,
+    y: (((event.clientY - bounding.top) / magnetButton.offsetHeight) - 0.5) * strength,
+    ease: "power4.out"
+  });
+};
+
+const mouseLeave = (event) => {
+  event.currentTarget.addEventListener('mouseleave', resetButtonPosition);
+};
+
+const resetButtonPosition = (event) => {
+  const magnetButton = event.currentTarget.querySelector('.magnet-button');
+  if (magnetButton) {
+    gsap.to(magnetButton, {
+      duration: 1,
+      x: 0,
+      y: 0,
+      ease: "power4.out"
+    });
+  }
+};
 </script>
 
 <template>
@@ -51,6 +85,12 @@ onBeforeUnmount(() => {
           Doppelkettsystem mit der Charakteristischen Webkante.
         </p>
       </div>
+      <div class="magnetic" @mouseenter="mouseEnter" @mousemove="mouseMove" @mouseleave="mouseLeave">
+          <button class="button-filled-black magnet-button my-button">
+            Kontakt
+          </button>
+          <slot></slot>
+        </div>
     </div>
   </div>
 </template>
@@ -71,7 +111,7 @@ onBeforeUnmount(() => {
 }
 
 .hero-text h1 {
-  font-size: 28px;
+  font-size: clamp(30px, 4.5vw, 35px);
   font-weight: 900;
   margin-bottom: 15px;
 }
@@ -80,16 +120,49 @@ onBeforeUnmount(() => {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  gap: clamp(2em, 2vw, 3em);
-  margin: 0px;
+  gap: clamp(3em, 2vw, 4em);
+  margin: 0% 0% 0% 0%;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
 
 .text-columns p {
   flex: 1;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 450;
+  font-family: 'steradianregular', sans-serif;
+  line-height: 1.5rem;
+}
+.button-filled-black {
+  width: 170px;
+  height: 50px;
+  background-color: #272727;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 50px;
+  border-style: none;
+  margin: 10% 0% 30% 0%;
+  transform: translate(-10px, 0px);
+}
+.magnetic {
+  display: inline-block
+}
+.my-button {
+  background-color: #eae8e8;
+  border: 2px solid #000;
+  color: #272727;
+  cursor: pointer;
+}
+.my-button:hover {
+  color: #FFF;
+  background-color: #000;
+  transition: 0.5s background-color, 0.5s box-shadow;
+  box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
 }
 
 /* Smartphone */
@@ -97,6 +170,20 @@ onBeforeUnmount(() => {
   .lottie {
     width: 100%;
     height: auto;
+  }
+  .hero-text {
+    margin: 13% 5% 1% 5%;
+  }
+  .text-columns p {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  .magnetic {
+    margin: 0%;
+    width: 100%;
+  }
+  .button-filled-black {
+    margin: 10% auto !important;
   }
 }
 
@@ -111,6 +198,9 @@ onBeforeUnmount(() => {
   }
   .lottie {
     width: 100%;
+  }
+  .button-filled-black{
+    margin: 20% 0% 0% 0%;
   }
 }
 
