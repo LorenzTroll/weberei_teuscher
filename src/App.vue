@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 #layout {
-  font-family: steradianregular, steradianblack, Helvetica, Arial, sans-serif;
+  font-family: steradianregular, steradianblack, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

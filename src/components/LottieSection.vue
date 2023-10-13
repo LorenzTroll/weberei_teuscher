@@ -17,7 +17,7 @@ const updateAnimation = () => {
 }
 
 onMounted(() => {
-  mql = window.matchMedia('(max-width: 480px)')
+  mql = window.matchMedia('(max-width: 560px)')
   mql.addListener(updateAnimation)
   updateAnimation()
 })
@@ -112,6 +112,7 @@ const resetButtonPosition = (event) => {
 
 .hero-text h1 {
   font-size: clamp(30px, 4.5vw, 35px);
+  font-family: 'Steradian Black';
   font-weight: 900;
   margin-bottom: 15px;
 }
@@ -129,16 +130,18 @@ const resetButtonPosition = (event) => {
 .text-columns p {
   flex: 1;
   font-size: 18px;
+  font-family: 'Steradian';
   font-weight: 450;
-  font-family: 'steradianregular', sans-serif;
   line-height: 1.5rem;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 .button-filled-black {
   width: 170px;
   height: 50px;
   background-color: #272727;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 550;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -148,21 +151,24 @@ const resetButtonPosition = (event) => {
   border-style: none;
   margin: 10% 0% 30% 0%;
   transform: translate(-10px, 0px);
+  font-family: 'Steradian';
 }
 .magnetic {
   display: inline-block
 }
 .my-button {
   background-color: #eae8e8;
-  border: 2px solid #000;
+  border: 2px solid #272727;
   color: #272727;
   cursor: pointer;
+  font-family: 'Steradian';
 }
 .my-button:hover {
-  color: #FFF;
+  color: #ffffff;
   background-color: #000;
   transition: 0.5s background-color, 0.5s box-shadow;
   box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
+  font-family: 'Steradian';
 }
 
 /* Smartphone */

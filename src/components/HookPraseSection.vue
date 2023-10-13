@@ -20,19 +20,17 @@
   height: auto;
   display: flex;
   justify-content: center;
-
   font-size: clamp(1.5em, 6.5vw, 3.3em);
-  font-family: 'steradianblack';
+  font-family: 'Steradian Black';
   font-weight: 900;
   font-style: normal;
-
   color: #2f2f2f;
   overflow: hidden;
 }
 
 p {
   text-align: start;
-  width: 90%;
+  width: 95%;
   hyphens: manual;
   line-height: clamp(7vh, 3.3vh, 4vh) !important;
 }

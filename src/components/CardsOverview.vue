@@ -86,6 +86,7 @@ img {
 
 h1 {
   font-size: clamp(30px, 4.5vw, 35px);
+  font-family: 'Steradian Black';
   font-weight: 900;
   text-align: left;
   line-height: clamp(40px, 4.5vw, 46px);
@@ -96,7 +97,8 @@ h1 {
 
 p {
   font-size: 18px;
-  font-weight: 400;
+  font-family: 'Steradian';
+  font-weight: 450;
   line-height: 1.45em;
   text-align: left;
   hyphens: auto;
@@ -134,6 +136,9 @@ p {
 
 .card-info h1 {
   color: #ffffff;
+  font-family: 'Steradian Black';
+  font-weight: 900;
+  font-size: clamp(30px, 4.5vw, 35px);
 }
 
 .card-info p {

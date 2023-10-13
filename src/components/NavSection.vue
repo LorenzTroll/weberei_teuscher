@@ -30,9 +30,9 @@ onUnmounted(() => {
   <header class="navbar">
     <div class="nav-container">
       <img class="logo" src="../assets/ident/wt_ident_2023.svg" alt="Logo" />
-      <div id="text-nav-short-hook" v-if="!isSmallScreen">
+      <!-- <div id="text-nav-short-hook" v-if="!isSmallScreen">
         <p>Individuelle Gewebeherstellung<br>und Beratung in Halle Saale</p>
-      </div>
+      </div> -->
       <div class="buttons-container">
         <button class="button-filled-black" v-if="!isSmallScreen">Kontakt</button>
         <button class="button-outline-transparent" v-if="!isSmallScreen">Instagram</button>
@@ -85,8 +85,12 @@ onUnmounted(() => {
 }
 
 .logo {
-  width: 200px;
+  width: 230px;
   height: auto;
+}
+
+img {
+  border-radius: 0px;
 }
 
 #text-nav-short-hook {
@@ -100,19 +104,20 @@ onUnmounted(() => {
 
 .buttons-container {
   display: flex;
-  margin-left: 2%;
+  margin-left: 40%;
   gap: 15px;
   text-align: left;
   line-height: 22px;
 }
 
 .button-outline-transparent {
-  width: 120px;
+  width: 140px;
   height: 50px;
-  border: 2.7px solid #000;
+  border: 2px solid #272727;
   background-color: transparent;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
+  font-family: 'Steradian';
+  font-weight: 550;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,12 +126,13 @@ onUnmounted(() => {
 }
 
 .button-filled-black {
-  width: 120px;
+  width: 130px;
   height: 50px;
   background-color: #272727;
   color: #FFFFFF;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
+  font-family: 'Steradian';
+  font-weight: 550;
   display: flex;
   justify-content: center;
   align-items: center;

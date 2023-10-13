@@ -2,9 +2,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 /* manipulate inner Text play-pause-button to just symbol on small screens */
-const isMobile = ref(window.innerWidth <= 481)
+const isMobile = ref(window.innerWidth <= 560)
 const updateWidth = () => {
-  isMobile.value = window.innerWidth <= 481
+  isMobile.value = window.innerWidth <= 560
 }
 
 onMounted(() => {
@@ -80,7 +80,7 @@ const showPauseButton = () => {
       ref="playButton"
       @click="playVideo"
       class="play-button play-icon"
-      v-if="!isMobile">Video &#9658;
+      v-if="!isMobile">Video  &#9658;
     </button>
 
     <button
@@ -128,8 +128,9 @@ video {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  font-weight: bold;
-  font-size: 20px;
+  font-family: 'Steradian';
+  font-weight: 550;
+  font-size: 16px;
 }
 .play-button:hover {
   background-color: #ddd;
@@ -173,6 +174,9 @@ video {
 @media screen and (min-width: 992px) {
   .play-button,
   .pause-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
     width: 130px;
     height: 55px;

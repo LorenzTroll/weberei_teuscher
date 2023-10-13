@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'steradianregular';
+  font-family: 'Steradian';
   /*src: local(steradianregular),*/
   src: url('/Fonts/steradian-rg-webfont.eot#'),
   src: url('/Fonts/steradian-rg-webfont.eot?#iefix') format('embedded-opentype'),
@@ -22,7 +22,7 @@
 }
 
 @font-face {
-  font-family: 'steradianblack';
+  font-family: 'Steradian Black';
   /*src: local(steradianblack),*/
   src: url('~@/Fonts/steradian-blk-webfont.eot#'),
   src: url('~@/Fonts/steradian-blk-webfont.eot?#iefix') format('embedded-opentype'),

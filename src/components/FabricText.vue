@@ -70,6 +70,7 @@ const resetButtonPosition = (event) => {
   font-size: clamp(30px, 4.5vw, 35px);
   font-weight: 900;
   margin-bottom: 10px;
+  font-family: 'Steradian Black';
 }
 
 .text-columns {
@@ -88,6 +89,7 @@ const resetButtonPosition = (event) => {
   max-width: 70%;
   hyphens: auto;
   line-height: 1.5rem;
+  font-family: 'Steradian';
 }
 
 /*.button-outline-transparent {
@@ -113,7 +115,8 @@ const resetButtonPosition = (event) => {
   height: 50px;
   background-color: #272727;
   color: #ffffff;
-  font-weight: bold;
+  font-family: 'Steradian';
+  font-weight: 550;
   font-size: 16px;
   display: flex;
   justify-content: center;

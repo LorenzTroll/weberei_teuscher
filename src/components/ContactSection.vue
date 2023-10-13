@@ -132,7 +132,7 @@ h1 {
   height: 50px;
   background-color: #272727;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 550;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -141,6 +141,7 @@ h1 {
   border-radius: 50px;
   border-style: none;
   margin-top: 10%;
+  font-family: 'Steradian';
 }
 
 #image-contact {
@@ -169,6 +170,7 @@ h1 {
   background-color: #000;
   transition: 0.5s background-color, 0.5s box-shadow;
   box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
+  font-family: 'Steradian';
 }
 
 .scroll-to-top {
