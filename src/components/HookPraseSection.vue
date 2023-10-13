@@ -22,7 +22,7 @@
   justify-content: center;
 
   font-size: clamp(1.5em, 6.5vw, 3.3em);
-  font-family: 'Steradian Black';
+  font-family: 'steradianblack';
   font-weight: 900;
   font-style: normal;
 

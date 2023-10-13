@@ -84,10 +84,10 @@ onMounted(() => {
 }
 
 #rectangle-element {
-  width: 70%;
-  height: 50%;
-  background-color: #86b49e;
-  border-radius: 10px;
+  width: 100%;
+  height: 70%;
+  background-color: #272727;
+  border-radius: 20px;
   transform: translate(0%, 0%);
 
   top: 50%;

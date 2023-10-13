@@ -173,10 +173,11 @@ h1 {
 
 .scroll-to-top {
   border-radius: 50px;
-  color: #272727;
+  color: #ffffff;
   cursor: pointer;
   height: 140px;
   width: 50px;
+  border-style: none;
 }
 
 .column-to-top {

@@ -13,7 +13,9 @@ defineProps({
     :to="{ name: 'fabric-details', params: { id: fabric.id } }">
     <div class="fabric-card">
       <div class="image-container">
+        <!--<div class="overlay"></div>-->
         <img :src="fabric.image" alt="My Image" />
+        
       </div>
     </div>
   </RouterLink>
@@ -38,29 +40,53 @@ defineProps({
   overflow: hidden;
   border-radius: 15px;
   margin: 5% 5% 5% 0%;
-  box-shadow: 0 3px 40px 0 rgba(10, 40, 40, 0.2);
-  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  
 }
 
 .image-container img {
   width: 200%;
   height: 150%;
   object-fit: cover;
-  transition: all 0.25s ease-in-out;
+  position: absolute;
+  z-index: -10;
+  left: 0;
+  transition: transform 0.2s ease-in-out;
+  
+  
+  
 }
 
 .image-container:hover {
-  transform: scale(1.04);
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(0.98) rotate(0.1deg) ;
+  box-shadow: 0 3px 20px 0 rgba(10, 40, 40, 0.2);
+  
 }
 
 .image-container:hover img {
-  transform: scale(1.04) rotate(1.5deg) translateX(-20px) translateY(10px);
+  transform: scale(1) rotate(0deg) translateX(1px) translateY(1px);
 }
 
 .fabrics-link {
   margin-right: 6%;
 }
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  
+}
+.overlay:hover {
+  transition: all 0.2s ease-in-out;
+
+  opacity: 0%;
+}
+
 @media (max-width: 768px) {
   .image-container {
     width: clamp(60%, -10%, -25%);

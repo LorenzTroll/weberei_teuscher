@@ -6,6 +6,28 @@ const cardImage = CardImage
 <template>
   <div class="wrapper">
     <div class="column">
+      <div class="card" style="background-color: #fcfcfc">
+        <div class="image">
+          <img :src="cardImage" alt="" />
+        </div>
+        <h1>Mechanische<br>Webstühle</h1>
+        <p>
+          Zur Verfügung stehen zwei Schaftmaschinen Grosse Bj1949 der Firma
+          Grünne mit max. 25 Schäften, Doppelkettsystem, 152cm Webbreite
+          inklusive Webkante. Darüber hinaus ein 160er Spulengatter bereit plus
+          Konusschärmaschine mit max. 2 m Kettbreite, Kreuzspulmaschineund eine
+          Hacoba Schussspulmaschine."
+        </p>
+      </div>
+      <div class="card card-info" style="background-color: #ff6a6a">
+        <h1>Offenes Atelier</h1>
+        <p>
+          Save the Date am 23. März 2023. Auch die Weberei Teuscher nimmt teil
+          und läd ein. Alle Infos gibt’s im Link.
+        </p>
+      </div>
+    </div>
+    <div class="column">
       <div
         class="card card-info card-request"
         style="background-color: #232323"
@@ -35,28 +57,7 @@ const cardImage = CardImage
         </p>
       </div>
     </div>
-    <div class="column">
-      <div class="card" style="background-color: #fcfcfc">
-        <div class="image">
-          <img :src="cardImage" alt="" />
-        </div>
-        <h1>Mechanische<br>Webstühle</h1>
-        <p>
-          Zur Verfügung stehen zwei Schaftmaschinen Grosse Bj1949 der Firma
-          Grünne mit max. 25 Schäften, Doppelkettsystem, 152cm Webbreite
-          inklusive Webkante. Darüber hinaus ein 160er Spulengatter bereit plus
-          Konusschärmaschine mit max. 2 m Kettbreite, Kreuzspulmaschineund eine
-          Hacoba Schussspulmaschine."
-        </p>
-      </div>
-      <div class="card card-info" style="background-color: #ff6a6a">
-        <h1>Offenes Atelier</h1>
-        <p>
-          Save the Date am 23. März 2023. Auch die Weberei Teuscher nimmt teil
-          und läd ein. Alle Infos gibt’s im Link.<br /><br /><br />
-        </p>
-      </div>
-    </div>
+
   </div>
 </template>
 
